@@ -1,10 +1,10 @@
 {
-  "name": "constate-typescript",
-  "description": "A simple TypeScript example using Constate",
+  "name": "sosialhjelp-veiviser",
+  "description": "Veiviser for sosialhjelp",
   "version": "1.0.0",
   "private": true,
   "keywords": [
-    "constate",
+    "nav",
     "context",
     "state",
     "react",
@@ -15,8 +15,10 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@types/react": "16.9.9",
-    "@types/react-dom": "16.9.2",
+    "@types/node": "^12.12.9",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4",
+    "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
     "connected-react-router": "^6.6.0",
     "history": "^4.10.1",
@@ -24,8 +26,8 @@
     "nav-frontend-chevron": "^1.0.10",
     "nav-frontend-chevron-style": "^0.3.5",
     "nav-frontend-core": "^4.0.11",
-    "nav-frontend-ekspanderbartpanel": "^1.0.35",
-    "nav-frontend-ekspanderbartpanel-style": "^0.3.22",
+    "nav-frontend-ekspanderbartpanel": "^2.0.0",
+    "nav-frontend-ekspanderbartpanel-style": "^0.3.23",
     "nav-frontend-js-utils": "^1.0.8",
     "nav-frontend-knapper": "^1.0.37",
     "nav-frontend-knapper-style": "^0.3.32",
@@ -33,7 +35,7 @@
     "nav-frontend-lenkepanel-style": "^0.3.27",
     "nav-frontend-lenker": "^1.0.32",
     "nav-frontend-lenker-style": "^0.2.24",
-    "nav-frontend-lesmerpanel": "0.0.31",
+    "nav-frontend-lesmerpanel": "0.0.32",
     "nav-frontend-lesmerpanel-style": "0.0.27",
     "nav-frontend-paneler": "^1.0.21",
     "nav-frontend-paneler-style": "^0.3.17",
@@ -46,17 +48,13 @@
     "parcel-bundler": "1.12.4",
     "react": "^16.12.0",
     "react-collapse": "^5.0.0",
-    "react-dom": "16.10.2",
-    "react-intl": "^3.4.0",
+    "react-dom": "16.12.0",
+    "react-intl": "^3.6.0",
     "react-redux": "^7.1.3",
     "react-router": "^5.1.2",
     "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0",
-    "tslib": "1.10.0",
-    "typescript": "3.6.4",
-    "whatwg-fetch": "^3.0.0",
-    "@types/node": "^12.12.5",
-    "babel-polyfill": "^6.26.0"
+    "typescript": "3.7.2",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "less": "^3.10.3"

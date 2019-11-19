@@ -1,9 +1,9 @@
 import * as React from "react";
 import "./sprakVelger.less";
 import {useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {push} from "connected-react-router";
-import {detekterSprak, Sprak} from "../../utils/sprakUtils";
+// import {useDispatch, useSelector} from "react-redux";
+// import {push} from "connected-react-router";
+import {Sprak} from "../../utils/sprakUtils";
 
 
 const SprakVelger: React.FC = () => {
@@ -25,20 +25,22 @@ const SprakVelger: React.FC = () => {
 
     const onClick = (event: any): void => {
         setAapen(!aapen);
-    };
-
-    const dispatch = useDispatch();
-
-    const velgSpraak = (event: any, sti: string) => {
-        dispatch(push(sti));
         event.preventDefault();
     };
 
-    const search = useSelector((state: any) => state.router.location.search);
 
-    let valgtSprak = detekterSprak(search);
 
-    const tilgjengelige = useSelector((state: any) => state.navigasjon.sprak.tilgjengelige);
+    const velgSpraak = (event: any, sti: string) => {
+        // dispatch(push(sti));
+        console.log("TODO Gå til " + sti);
+        event.preventDefault();
+    };
+
+
+
+    let valgtSprak: string = "no";
+
+    const tilgjengelige = [Sprak.NORSK_BOKMAL, Sprak.ENGELSK, Sprak.NYNORSK];
     const erSprakTilgjengelig = (sprak: Sprak): boolean => {
         return Object.values(tilgjengelige).includes(sprak)
     };
